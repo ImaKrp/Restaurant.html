@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurante do Julinho</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header class="flex-container">
+        <nav>
+        <a href="menu.html" class="link">Menu</a>
+        <a href="index.html" class="link">Restaurante</a>
+    </nav>
+        <a href="index.html"><img src="resources/Logo.png" id="logo"></a>
+    </header>
+        <div class="xop-wrapper">
+            <div class="xop-container">
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <h1>Pratos da Casa</h1>
+        <img id="slider" src="./resources/macarrao.jpg" />
+  
+        <ul>
+          <li onmouseenter="sliderImg('./resources/saladaestranha.jpg')">
+            <img
+              class="little-images"
+              src="./resources/saladaestranha.jpg"
+              alt=""
+            />
+          </li>
+          <li onmouseenter="sliderImg('./resources/picanha.jpg')">
+            <img class="little-images" src="./resources/picanha.jpg" alt="" />
+          </li>
+          <li onmouseenter="sliderImg('./resources/nhoque.jpeg')">
+            <img class="little-images" src="./resources/nhoque.jpeg" alt="" />
+          </li>
+          <li onmouseenter="sliderImg('./resources/salada-caesar.jpeg')">
+            <img
+              class="little-images"
+              src="./resources/salada-caesar.jpeg"
+              alt=""
+            />
+          </li>
+        </ul>
+        <button><img src="resources/Whatsapp.png" id="whats"><a href="https://api.whatsapp.com" target="_blank">Contato</a></button>
+      </div>
+    <footer>
+      <div>
+          <button id="reserve"><a href="menu.html" class="link" >Reserve</a></button>
+      </div>
+      <div>
+        <img src="resources/Delivery.svg" id="info">
+            <p>Delivery</p>
+        <img src="resources/Phone.svg" id="info">
+            <p>(49) 9920-4267</p>
+      </div>
+  </footer>
+  <script src="/index.js"></script>
+</body>
+</html>

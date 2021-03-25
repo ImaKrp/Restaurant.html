@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurante do Julinho</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+    <header class="flex-container">
+        <nav>
+        <a href="menu.html" class="link">Menu</a>
+        <a href="index.html" class="link">Restaurante</a>
+    </nav>
+        <a href="index.html"><img src="resources/Logo.png" id="logo"></a>
+    </header>
+
+
+    
+   <section id="tot">
+       <form id="form">
+        <fieldset>
+            <legend>Pratos</legend>
+            <table style="width:100%">
+                <tr>
+                <th><label for="">Carne</label>
+                <input type="radio" id="Carne" name="opt" value="1"></th>
+                <th><label for="">Massa</label>
+                <input type="radio" id="Massa" name="opt" value="2"></th>
+                <th><label for="">Salada</label>
+                <input type="radio" id="Salada" name="opt" value="3"></th>
+                </tr>
+                <tr>
+                <th><img src="resources/picanha.jpg" id="pratos">
+                    <select id="tipoc">
+                        <option value="49.90">Picanha - R$49.90</option>
+                        <option value="35.90">File Duplo - R$35.90</option>
+                        <option value="29.99">Alcatraz - R$29.99</option>
+                        
+                <th><img src="resources/nhoque.jpeg" id="pratos">
+                    <select id="tipon">
+                        <option value="49.90">Nhoque basic - R$49.90</option>
+                        <option value="35.90">Nhoque premium - R$35.90</option>
+                        <option value="29.99">Nhoque Deluxe - R$29.99</option>
+                    </select>
+                        
+                <th><img src="resources/salada-caesar.jpeg" id="pratos">
+                    <select id="tipos">
+                        <option value="49.90">Salada normal - R$49.90</option>
+                        <option value="35.90">Salada premium - R$35.90</option>
+                        <option value="29.99">Salada Deluxo - R$29.99</option>
+                        </select>
+                </tr>
+                <tr>
+                    <th><label>Quantidade:⠀</label><input type="number" id="qtdCarne"  /></th>
+                    <th><label>Quantidade:⠀</label><input type="number" id="qtdNhoque" /></th>
+                    <th><label>Quantidade:⠀</label><input type="number" id="qtdSalada" /></th>
+                </tr>
+            </table>
+        </fieldset>
+            <fieldset class="Container">
+                <legend>Adicional</legend>
+                <table style="width:100%">
+                    <tr>
+                    <th><label for="" id="">Embalagem</label>
+                    <input type="checkbox" checked="true" id="Couvert" name="Adicional"></th>
+                    <th><label for="" id="">Couvert</label>
+                        <input type="checkbox" checked="true" id="Embalagem" name="Adicional"></th>
+                    
+                    </tr>
+                    </table>
+                </fieldset>
+
+        <p><button type="submit"> Calcular </button></p>
+        <h3 id="result">Valor total: <span id="valor"></span> </h3>
+
+    </form>
+            <form>
+                <p><label id="lab">Nome:⠀</label><input type="text" id="nome" name="user_name"></p>
+                <p><label id="lab">Mensagem: <textarea id="msg" name="msg"></textarea></label>
+                <p><button type="submit" onclick="Mensagem()">Enviar</button></p>
+            </form>
+       
+   </section>
+
+
+    <footer>
+        <div>
+            <button id="reserve"><a href="menu.html" class="link" >Reserve</a></button>
+        </div>
+        <div>
+          <img src="resources/Delivery.svg" id="info">
+              <p>Delivery</p>
+          <img src="resources/Phone.svg" id="info">
+              <p>(49) 9920-4267</p>
+        </div>
+    </footer>
+    <script src="menu.js"></script>
+  </body>
+  </html>
