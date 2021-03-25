@@ -46,8 +46,6 @@ form.addEventListener("submit", (e) => {
     embalagem
   );
 
-  
-
   if (carne) {
     valorTotal =
       qtdCarne * tipoCarne + (couvert ? 10 : 0) + (embalagem ? 10 : 0);
